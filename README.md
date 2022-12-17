@@ -1,7 +1,7 @@
 # Email Validator for Pardot
 
 ## Description
-As per Salesforce best practice docs: "_Your Pardot prospect database grows over time. To keep your list up to date, practice good database hygiene by checking that all your prospects are engaged. Bad database hygiene affects your scoring and grading and email deliverability, and it can prevent you from reaching your revenue potential. Good database hygiene keeps you connected with the most engaged prospects, protects your sending reputation, and helps increase your ROI. When your database is clean, you can focus on nurturing only the most qualified prospects._"
+As per Salesforce best practice [docs](https://help.salesforce.com/s/articleView?language=en_US&id=sf.pardot_database_hygiene.htm&type=5): "_Your Pardot prospect database grows over time. To keep your list up to date, practice good database hygiene by checking that all your prospects are engaged. Bad database hygiene affects your scoring and grading and email deliverability, and it can prevent you from reaching your revenue potential. Good database hygiene keeps you connected with the most engaged prospects, protects your sending reputation, and helps increase your ROI. When your database is clean, you can focus on nurturing only the most qualified prospects._"
 
 
 
