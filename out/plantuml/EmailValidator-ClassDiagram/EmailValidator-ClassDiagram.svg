@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="906px" preserveAspectRatio="none" style="width:2095px;height:906px;background:#FFFFFF;" version="1.1" viewBox="0 0 2095 906" width="2095px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="23.5547" rx="3.5" ry="3.5" style="stroke:none;stroke-width:1.0;" width="165" x="1916" y="0"/><text fill="#000080" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="29" x="2052" y="9.668">NOTE:</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="165" x="1916" y="21.4453">Only main classes are shown here</text><rect fill="#FFFFFF" height="26.4883" id="_title" rx="3.5" ry="3.5" style="stroke:none;stroke-width:1.0;" width="398" x="841.5" y="29.5547"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="388" x="846.5" y="48.0898">Email Validator for Pardot (Simplified Class Diagram)</text><!--MD5=[a5b0006dc8b8471110e39be0090065c8]
+cluster Email Validator - Invocable Action--><g id="cluster_Email Validator - Invocable Action"><rect fill="none" height="349" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="454" x="304" y="69.043"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="249" x="406.5" y="84.5781">Email Validator - Invocable Action</text></g><!--MD5=[c9a4b56a5905c10c059bd5ee75e50271]
+cluster Email Validator--><g id="cluster_Email Validator"><rect fill="none" height="355" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="754" x="782" y="278.043"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="111" x="1103.5" y="293.5781">Email Validator</text></g><!--MD5=[652993b5ae7f1ca12f8cd85660f863dc]
+cluster EmailRep.io--><g id="cluster_EmailRep.io"><rect fill="none" height="234" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="400" x="7" y="666.043"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="84" x="165" y="681.5781">EmailRep.io</text></g><!--MD5=[261da77996e9f035e3c4084b9a19bc49]
+cluster Abstract API--><g id="cluster_Abstract API"><rect fill="none" height="234" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="482" x="431" y="666.043"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89" x="627.5" y="681.5781">Abstract API</text></g><!--MD5=[3a5f21e314b1a4b30f05631b4a27b793]
+cluster Sendgrid (Twilio)--><g id="cluster_Sendgrid (Twilio)"><rect fill="none" height="234" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="526" x="937" y="666.043"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="124" x="1138" y="681.5781">Sendgrid (Twilio)</text></g><!--MD5=[ea72884d68365b5cc8424c15a254fd1a]
+cluster ZeroBounce--><g id="cluster_ZeroBounce"><rect fill="none" height="234" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="602" x="1487" y="666.043"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="83" x="1746.5" y="681.5781">ZeroBounce</text></g><!--MD5=[603e23754a25ba6748770074c656e60e]
+class EmailValidatorAction--><g id="elem_EmailValidatorAction"><rect codeLine="14" fill="#F1F1F1" height="80.9766" id="EmailValidatorAction" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="421" x="320.5" y="104.043"/><ellipse cx="455.25" cy="120.043" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M457.7231,126.186 Q457.1421,126.4849 456.5029,126.6343 Q455.8638,126.7837 455.1582,126.7837 Q452.6514,126.7837 451.3315,125.1318 Q450.0117,123.48 450.0117,120.3589 Q450.0117,117.2295 451.3315,115.5776 Q452.6514,113.9258 455.1582,113.9258 Q455.8638,113.9258 456.5112,114.0752 Q457.1587,114.2246 457.7231,114.5234 L457.7231,117.2461 Q457.0923,116.665 456.4988,116.3953 Q455.9053,116.1255 455.2744,116.1255 Q453.9297,116.1255 453.2449,117.1921 Q452.5601,118.2588 452.5601,120.3589 Q452.5601,122.4507 453.2449,123.5173 Q453.9297,124.584 455.2744,124.584 Q455.9053,124.584 456.4988,124.3142 Q457.0923,124.0444 457.7231,123.4634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="475.75" y="125.334">EmailValidatorAction</text><line style="stroke:#181818;stroke-width:0.5;" x1="321.5" x2="740.5" y1="136.043" y2="136.043"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="326.5" y="153.5781">@InvocableMethod</text><line style="stroke:#181818;stroke-width:0.5;" x1="321.5" x2="740.5" y1="160.5313" y2="160.5313"/><ellipse cx="331.5" cy="174.2754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="395" x="340.5" y="178.0664">getEmailReputation(List&lt;ProspectDto&gt;) : List&lt;Response&gt;</text></g><!--MD5=[d79830ecb6158a0c8d107fb071400eb8]
+class EmailValidatorAction.Response--><g id="elem_EmailValidatorAction.Response"><rect codeLine="20" fill="#F1F1F1" height="80.9766" id="EmailValidatorAction.Response" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="245" x="408.5" y="321.043"/><ellipse cx="423.5" cy="337.043" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M425.9731,343.186 Q425.3921,343.4849 424.7529,343.6343 Q424.1138,343.7837 423.4082,343.7837 Q420.9014,343.7837 419.5815,342.1318 Q418.2617,340.48 418.2617,337.3589 Q418.2617,334.2295 419.5815,332.5776 Q420.9014,330.9258 423.4082,330.9258 Q424.1138,330.9258 424.7612,331.0752 Q425.4087,331.2246 425.9731,331.5234 L425.9731,334.2461 Q425.3423,333.665 424.7488,333.3953 Q424.1553,333.1255 423.5244,333.1255 Q422.1797,333.1255 421.4949,334.1921 Q420.8101,335.2588 420.8101,337.3589 Q420.8101,339.4507 421.4949,340.5173 Q422.1797,341.584 423.5244,341.584 Q424.1553,341.584 424.7488,341.3142 Q425.3423,341.0444 425.9731,340.4634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213" x="437.5" y="342.334">EmailValidatorAction.Response</text><line style="stroke:#181818;stroke-width:0.5;" x1="409.5" x2="652.5" y1="353.043" y2="353.043"/><ellipse cx="419.5" cy="366.7871" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="428.5" y="370.5781">success : Boolean</text><ellipse cx="419.5" cy="383.2754" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="428.5" y="387.0664">resultMessage : String</text><line style="stroke:#181818;stroke-width:0.5;" x1="409.5" x2="652.5" y1="394.0195" y2="394.0195"/></g><!--MD5=[fc094a455342c7a8a159384761327e74]
+class EmailValidator--><g id="elem_EmailValidator"><rect codeLine="31" fill="#F1F1F1" height="97.4648" id="EmailValidator" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="247" x="803.5" y="313.043"/><ellipse cx="873.25" cy="329.043" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M875.7231,335.186 Q875.1421,335.4849 874.5029,335.6343 Q873.8638,335.7837 873.1582,335.7837 Q870.6514,335.7837 869.3315,334.1318 Q868.0117,332.48 868.0117,329.3589 Q868.0117,326.2295 869.3315,324.5776 Q870.6514,322.9258 873.1582,322.9258 Q873.8638,322.9258 874.5112,323.0752 Q875.1587,323.2246 875.7231,323.5234 L875.7231,326.2461 Q875.0923,325.665 874.4988,325.3953 Q873.9053,325.1255 873.2744,325.1255 Q871.9297,325.1255 871.2449,326.1921 Q870.5601,327.2588 870.5601,329.3589 Q870.5601,331.4507 871.2449,332.5173 Q871.9297,333.584 873.2744,333.584 Q873.9053,333.584 874.4988,333.3142 Q875.0923,333.0444 875.7231,332.4634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="893.75" y="334.334">EmailValidator</text><line style="stroke:#181818;stroke-width:0.5;" x1="804.5" x2="1049.5" y1="345.043" y2="345.043"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="809.5" y="362.5781">EmailValidator(String service)</text><line style="stroke:#181818;stroke-width:1.0;" x1="804.5" x2="1049.5" y1="369.5313" y2="369.5313"/><ellipse cx="814.5" cy="383.2754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="823.5" y="387.0664">checkEmail(ProspectDto)</text><ellipse cx="814.5" cy="399.7637" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="221" x="823.5" y="403.5547">logExternalActivity(ProspectDto)</text></g><!--MD5=[3e1169c7f456025ccec12d73e35a105b]
+class SettingService--><g id="elem_SettingService"><rect codeLine="38" fill="#F1F1F1" height="64.4883" id="SettingService" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="185" x="1116.5" y="329.543"/><ellipse cx="1157.15" cy="345.543" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1159.6231,351.686 Q1159.0421,351.9849 1158.4029,352.1343 Q1157.7638,352.2837 1157.0582,352.2837 Q1154.5514,352.2837 1153.2315,350.6318 Q1151.9117,348.98 1151.9117,345.8589 Q1151.9117,342.7295 1153.2315,341.0776 Q1154.5514,339.4258 1157.0582,339.4258 Q1157.7638,339.4258 1158.4112,339.5752 Q1159.0587,339.7246 1159.6231,340.0234 L1159.6231,342.7461 Q1158.9923,342.165 1158.3988,341.8953 Q1157.8053,341.6255 1157.1744,341.6255 Q1155.8297,341.6255 1155.1449,342.6921 Q1154.4601,343.7588 1154.4601,345.8589 Q1154.4601,347.9507 1155.1449,349.0173 Q1155.8297,350.084 1157.1744,350.084 Q1157.8053,350.084 1158.3988,349.8142 Q1158.9923,349.5444 1159.6231,348.9634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="1176.85" y="350.834">SettingService</text><line style="stroke:#181818;stroke-width:0.5;" x1="1117.5" x2="1300.5" y1="361.543" y2="361.543"/><line style="stroke:#181818;stroke-width:0.5;" x1="1117.5" x2="1300.5" y1="369.543" y2="369.543"/><ellipse cx="1127.5" cy="383.2871" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="1136.5" y="387.0781">getSettingValue(String)</text></g><!--MD5=[248f897e4bb16c2722904b15df30346f]
+class Logger--><g id="elem_Logger"><rect codeLine="44" fill="#F1F1F1" height="80.9766" id="Logger" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="183" x="1336.5" y="321.043"/><ellipse cx="1399.75" cy="337.043" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1402.2231,343.186 Q1401.6421,343.4849 1401.0029,343.6343 Q1400.3638,343.7837 1399.6582,343.7837 Q1397.1514,343.7837 1395.8315,342.1318 Q1394.5117,340.48 1394.5117,337.3589 Q1394.5117,334.2295 1395.8315,332.5776 Q1397.1514,330.9258 1399.6582,330.9258 Q1400.3638,330.9258 1401.0112,331.0752 Q1401.6587,331.2246 1402.2231,331.5234 L1402.2231,334.2461 Q1401.5923,333.665 1400.9988,333.3953 Q1400.4053,333.1255 1399.7744,333.1255 Q1398.4297,333.1255 1397.7449,334.1921 Q1397.0601,335.2588 1397.0601,337.3589 Q1397.0601,339.4507 1397.7449,340.5173 Q1398.4297,341.584 1399.7744,341.584 Q1400.4053,341.584 1400.9988,341.3142 Q1401.5923,341.0444 1402.2231,340.4634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="1420.25" y="342.334">Logger</text><line style="stroke:#181818;stroke-width:0.5;" x1="1337.5" x2="1518.5" y1="353.043" y2="353.043"/><line style="stroke:#181818;stroke-width:0.5;" x1="1337.5" x2="1518.5" y1="361.043" y2="361.043"/><ellipse cx="1347.5" cy="374.7871" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="157" x="1356.5" y="378.5781">writeLogsToDatabase()</text><ellipse cx="1347.5" cy="391.2754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="32" x="1356.5" y="395.0664">log()</text></g><!--MD5=[00b86a2d93f9fc8d148a957c5427a33c]
+class ProspectDto--><g id="elem_ProspectDto"><rect codeLine="49" fill="#F1F1F1" height="113.9531" id="ProspectDto" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="216" x="1121" y="495.043"/><ellipse cx="1183.25" cy="511.043" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1185.7231,517.186 Q1185.1421,517.4849 1184.5029,517.6343 Q1183.8638,517.7837 1183.1582,517.7837 Q1180.6514,517.7837 1179.3315,516.1318 Q1178.0117,514.48 1178.0117,511.3589 Q1178.0117,508.2295 1179.3315,506.5776 Q1180.6514,504.9258 1183.1582,504.9258 Q1183.8638,504.9258 1184.5112,505.0752 Q1185.1587,505.2246 1185.7231,505.5234 L1185.7231,508.2461 Q1185.0923,507.665 1184.4988,507.3953 Q1183.9053,507.1255 1183.2744,507.1255 Q1181.9297,507.1255 1181.2449,508.1921 Q1180.5601,509.2588 1180.5601,511.3589 Q1180.5601,513.4507 1181.2449,514.5173 Q1181.9297,515.584 1183.2744,515.584 Q1183.9053,515.584 1184.4988,515.3142 Q1185.0923,515.0444 1185.7231,514.4634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="1203.75" y="516.334">ProspectDto</text><line style="stroke:#181818;stroke-width:0.5;" x1="1122" x2="1336" y1="527.043" y2="527.043"/><ellipse cx="1132" cy="540.7871" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="1141" y="544.5781">email : String</text><ellipse cx="1132" cy="557.2754" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="1141" y="561.0664">service : String</text><ellipse cx="1132" cy="573.7637" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="1141" y="577.5547">businessUnitId : Id</text><line style="stroke:#181818;stroke-width:0.5;" x1="1122" x2="1336" y1="584.5078" y2="584.5078"/><ellipse cx="1132" cy="598.252" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="1141" y="602.043">isCalloutSuccess() : Boolean</text></g><!--MD5=[1aa37eb137f5ac6374184395b6fc177f]
+class ExternalActivity--><g id="elem_ExternalActivity"><rect codeLine="57" fill="#F1F1F1" height="113.9531" id="ExternalActivity" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="1372.5" y="495.043"/><ellipse cx="1391.55" cy="511.043" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1394.0231,517.186 Q1393.4421,517.4849 1392.8029,517.6343 Q1392.1638,517.7837 1391.4582,517.7837 Q1388.9514,517.7837 1387.6315,516.1318 Q1386.3117,514.48 1386.3117,511.3589 Q1386.3117,508.2295 1387.6315,506.5776 Q1388.9514,504.9258 1391.4582,504.9258 Q1392.1638,504.9258 1392.8112,505.0752 Q1393.4587,505.2246 1394.0231,505.5234 L1394.0231,508.2461 Q1393.3923,507.665 1392.7988,507.3953 Q1392.2053,507.1255 1391.5744,507.1255 Q1390.2297,507.1255 1389.5449,508.1921 Q1388.8601,509.2588 1388.8601,511.3589 Q1388.8601,513.4507 1389.5449,514.5173 Q1390.2297,515.584 1391.5744,515.584 Q1392.2053,515.584 1392.7988,515.3142 Q1393.3923,515.0444 1394.0231,514.4634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="1406.45" y="516.334">ExternalActivity</text><line style="stroke:#181818;stroke-width:0.5;" x1="1373.5" x2="1518.5" y1="527.043" y2="527.043"/><ellipse cx="1383.5" cy="540.7871" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="1392.5" y="544.5781">email : String</text><ellipse cx="1383.5" cy="557.2754" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="1392.5" y="561.0664">extension : String</text><ellipse cx="1383.5" cy="573.7637" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="1392.5" y="577.5547">type : String</text><ellipse cx="1383.5" cy="590.252" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="1392.5" y="594.043">value : String</text><line style="stroke:#181818;stroke-width:0.5;" x1="1373.5" x2="1518.5" y1="600.9961" y2="600.9961"/></g><!--MD5=[ea6fa1dfcc0050ff3fe90ead5e466dee]
+class EmailValidatorService--><g id="elem_EmailValidatorService"><rect codeLine="64" fill="#F1F1F1" height="89.5977" id="EmailValidatorService" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="247" x="818.5" y="507.043"/><ellipse cx="864.25" cy="527.3535" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M860.6777,523.6187 L860.6777,521.4604 L868.0571,521.4604 L868.0571,523.6187 L865.5918,523.6187 L865.5918,531.6953 L868.0571,531.6953 L868.0571,533.8535 L860.6777,533.8535 L860.6777,531.6953 L863.1431,531.6953 L863.1431,523.6187 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="58" x="929.25" y="523.6445">«Strategy»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="147" x="884.75" y="539.7109">EmailValidatorService</text><line style="stroke:#181818;stroke-width:0.5;" x1="819.5" x2="1064.5" y1="547.6641" y2="547.6641"/><line style="stroke:#181818;stroke-width:0.5;" x1="819.5" x2="1064.5" y1="555.6641" y2="555.6641"/><ellipse cx="829.5" cy="569.4082" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="838.5" y="573.1992">checkEmail(ProspectDto)</text><ellipse cx="829.5" cy="585.8965" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="221" x="838.5" y="589.6875">logExternalActivity(ProspectDto)</text></g><polygon fill="none" points="942,596.6406,949,616.6406,935,616.6406" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="942" x2="942" y1="616.6406" y2="618.043"/><line style="stroke:#454645;stroke-width:1.0;" x1="938.4766" x2="936.39" y1="507.043" y2="480.513"/><!--MD5=[fed146b21bd6ae313c9d9edab84269ac]
+class EmailRepImpl--><g id="elem_EmailRepImpl"><rect codeLine="86" fill="#F1F1F1" height="80.9766" id="EmailRepImpl" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="247" x="113.5" y="701.043"/><ellipse cx="186.25" cy="717.043" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M188.7231,723.186 Q188.1421,723.4849 187.5029,723.6343 Q186.8638,723.7837 186.1582,723.7837 Q183.6514,723.7837 182.3315,722.1318 Q181.0117,720.48 181.0117,717.3589 Q181.0117,714.2295 182.3315,712.5776 Q183.6514,710.9258 186.1582,710.9258 Q186.8638,710.9258 187.5112,711.0752 Q188.1587,711.2246 188.7231,711.5234 L188.7231,714.2461 Q188.0923,713.665 187.4988,713.3953 Q186.9053,713.1255 186.2744,713.1255 Q184.9297,713.1255 184.2449,714.1921 Q183.5601,715.2588 183.5601,717.3589 Q183.5601,719.4507 184.2449,720.5173 Q184.9297,721.584 186.2744,721.584 Q186.9053,721.584 187.4988,721.3142 Q188.0923,721.0444 188.7231,720.4634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="206.75" y="722.334">EmailRepImpl</text><line style="stroke:#181818;stroke-width:0.5;" x1="114.5" x2="359.5" y1="733.043" y2="733.043"/><line style="stroke:#181818;stroke-width:0.5;" x1="114.5" x2="359.5" y1="741.043" y2="741.043"/><ellipse cx="124.5" cy="754.7871" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="133.5" y="758.5781">checkEmail(ProspectDto)</text><ellipse cx="124.5" cy="771.2754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="221" x="133.5" y="775.0664">logExternalActivity(ProspectDto)</text></g><g id="elem_GMN16"><path d="M23.5,846.543 L23.5,880.1641 A3.5,3.5 0 0 0 27,883.6641 L387,883.6641 A3.5,3.5 0 0 0 390.5,880.1641 L390.5,853.043 L380.5,843.043 L215.99,843.043 L227.01,782.503 L207.99,843.043 L27,843.043 A3.5,3.5 0 0 0 23.5,846.543 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M380.5,843.043 L380.5,851.293 A1.75,1.75 0 0 0 382.25,853.043 L390.5,853.043 L380.5,843.043 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="346" x="29.5" y="860.6113">Implements Email Validation using EmailRep.io API:</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="29.5" y="875.9219">https://emailrep.io/</text></g><!--MD5=[d14c1952af65cb58f4f7edaf24b5524c]
+class AbstractImpl--><g id="elem_AbstractImpl"><rect codeLine="97" fill="#F1F1F1" height="80.9766" id="AbstractImpl" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="247" x="623.5" y="701.043"/><ellipse cx="699.25" cy="717.043" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M701.7231,723.186 Q701.1421,723.4849 700.5029,723.6343 Q699.8638,723.7837 699.1582,723.7837 Q696.6514,723.7837 695.3315,722.1318 Q694.0117,720.48 694.0117,717.3589 Q694.0117,714.2295 695.3315,712.5776 Q696.6514,710.9258 699.1582,710.9258 Q699.8638,710.9258 700.5112,711.0752 Q701.1587,711.2246 701.7231,711.5234 L701.7231,714.2461 Q701.0923,713.665 700.4988,713.3953 Q699.9053,713.1255 699.2744,713.1255 Q697.9297,713.1255 697.2449,714.1921 Q696.5601,715.2588 696.5601,717.3589 Q696.5601,719.4507 697.2449,720.5173 Q697.9297,721.584 699.2744,721.584 Q699.9053,721.584 700.4988,721.3142 Q701.0923,721.0444 701.7231,720.4634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="719.75" y="722.334">AbstractImpl</text><line style="stroke:#181818;stroke-width:0.5;" x1="624.5" x2="869.5" y1="733.043" y2="733.043"/><line style="stroke:#181818;stroke-width:0.5;" x1="624.5" x2="869.5" y1="741.043" y2="741.043"/><ellipse cx="634.5" cy="754.7871" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="643.5" y="758.5781">checkEmail(ProspectDto)</text><ellipse cx="634.5" cy="771.2754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="221" x="643.5" y="775.0664">logExternalActivity(ProspectDto)</text></g><g id="elem_GMN22"><path d="M447,846.543 L447,880.1641 A3.5,3.5 0 0 0 450.5,883.6641 L893.5,883.6641 A3.5,3.5 0 0 0 897,880.1641 L897,853.043 L887,843.043 L688.46,843.043 L722.03,782.503 L680.46,843.043 L450.5,843.043 A3.5,3.5 0 0 0 447,846.543 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M887,843.043 L887,851.293 A1.75,1.75 0 0 0 888.75,853.043 L897,853.043 L887,843.043 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="325" x="453" y="860.6113">Implements Email Validation using Abstract API:</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="429" x="453" y="875.9219">https://www.abstractapi.com/api/email-verification-validation-api</text></g><!--MD5=[fb5e84517d7a9e50144f4085aae51eb4]
+class SendgridImpl--><g id="elem_SendgridImpl"><rect codeLine="109" fill="#F1F1F1" height="80.9766" id="SendgridImpl" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="247" x="1014.5" y="701.043"/><ellipse cx="1087.75" cy="717.043" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1090.2231,723.186 Q1089.6421,723.4849 1089.0029,723.6343 Q1088.3638,723.7837 1087.6582,723.7837 Q1085.1514,723.7837 1083.8315,722.1318 Q1082.5117,720.48 1082.5117,717.3589 Q1082.5117,714.2295 1083.8315,712.5776 Q1085.1514,710.9258 1087.6582,710.9258 Q1088.3638,710.9258 1089.0112,711.0752 Q1089.6587,711.2246 1090.2231,711.5234 L1090.2231,714.2461 Q1089.5923,713.665 1088.9988,713.3953 Q1088.4053,713.1255 1087.7744,713.1255 Q1086.4297,713.1255 1085.7449,714.1921 Q1085.0601,715.2588 1085.0601,717.3589 Q1085.0601,719.4507 1085.7449,720.5173 Q1086.4297,721.584 1087.7744,721.584 Q1088.4053,721.584 1088.9988,721.3142 Q1089.5923,721.0444 1090.2231,720.4634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="1108.25" y="722.334">SendgridImpl</text><line style="stroke:#181818;stroke-width:0.5;" x1="1015.5" x2="1260.5" y1="733.043" y2="733.043"/><line style="stroke:#181818;stroke-width:0.5;" x1="1015.5" x2="1260.5" y1="741.043" y2="741.043"/><ellipse cx="1025.5" cy="754.7871" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="1034.5" y="758.5781">checkEmail(ProspectDto)</text><ellipse cx="1025.5" cy="771.2754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="221" x="1034.5" y="775.0664">logExternalActivity(ProspectDto)</text></g><g id="elem_GMN28"><path d="M953,846.543 L953,880.1641 A3.5,3.5 0 0 0 956.5,883.6641 L1443.5,883.6641 A3.5,3.5 0 0 0 1447,880.1641 L1447,853.043 L1437,843.043 L1193.7,843.043 L1158.65,782.503 L1185.7,843.043 L956.5,843.043 A3.5,3.5 0 0 0 953,846.543 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M1437,843.043 L1437,851.293 A1.75,1.75 0 0 0 1438.75,853.043 L1447,853.043 L1437,843.043 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="383" x="959" y="860.6113">Implements Email Validation using Twilio's Sendgrid API:</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="473" x="959" y="875.9219">https://sendgrid.com/solutions/email-api/email-address-validation-api/</text></g><!--MD5=[bc09b5a7cea72bd5404435e94b10917f]
+class ZerobounceImpl--><g id="elem_ZerobounceImpl"><rect codeLine="120" fill="#F1F1F1" height="80.9766" id="ZerobounceImpl" rx="3.5" ry="3.5" style="stroke:#181818;stroke-width:0.5;" width="247" x="1583.5" y="701.043"/><ellipse cx="1646.75" cy="717.043" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1649.2231,723.186 Q1648.6421,723.4849 1648.0029,723.6343 Q1647.3638,723.7837 1646.6582,723.7837 Q1644.1514,723.7837 1642.8315,722.1318 Q1641.5117,720.48 1641.5117,717.3589 Q1641.5117,714.2295 1642.8315,712.5776 Q1644.1514,710.9258 1646.6582,710.9258 Q1647.3638,710.9258 1648.0112,711.0752 Q1648.6587,711.2246 1649.2231,711.5234 L1649.2231,714.2461 Q1648.5923,713.665 1647.9988,713.3953 Q1647.4053,713.1255 1646.7744,713.1255 Q1645.4297,713.1255 1644.7449,714.1921 Q1644.0601,715.2588 1644.0601,717.3589 Q1644.0601,719.4507 1644.7449,720.5173 Q1645.4297,721.584 1646.7744,721.584 Q1647.4053,721.584 1647.9988,721.3142 Q1648.5923,721.0444 1649.2231,720.4634 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="1667.25" y="722.334">ZerobounceImpl</text><line style="stroke:#181818;stroke-width:0.5;" x1="1584.5" x2="1829.5" y1="733.043" y2="733.043"/><line style="stroke:#181818;stroke-width:0.5;" x1="1584.5" x2="1829.5" y1="741.043" y2="741.043"/><ellipse cx="1594.5" cy="754.7871" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="1603.5" y="758.5781">checkEmail(ProspectDto)</text><ellipse cx="1594.5" cy="771.2754" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="221" x="1603.5" y="775.0664">logExternalActivity(ProspectDto)</text></g><g id="elem_GMN34"><path d="M1503,846.543 L1503,880.1641 A3.5,3.5 0 0 0 1506.5,883.6641 L2069.5,883.6641 A3.5,3.5 0 0 0 2073,880.1641 L2073,853.043 L2063,843.043 L1778.54,843.043 L1733.97,782.503 L1770.54,843.043 L1506.5,843.043 A3.5,3.5 0 0 0 1503,846.543 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M2063,843.043 L2063,851.293 A1.75,1.75 0 0 0 2064.75,853.043 L2073,853.043 L2063,843.043 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="347" x="1509" y="860.6113">Implements Email Validation using ZeroBounce API:</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="534" x="1509" y="875.9219">https://www.zerobounce.net/docs/email-validation-api-quickstart#validate_emails</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="15" x="2043" y="875.9219">v2</text></g><!--MD5=[97cfc66019005dbc5ce2f3d158383b54]
+reverse link EmailValidatorAction to EmailValidatorAction.Response--><g id="link_EmailValidatorAction_EmailValidatorAction.Response"><path codeLine="25" d="M531,199.803 C531,237.463 531,286.793 531,320.823 " fill="none" id="EmailValidatorAction-backto-EmailValidatorAction.Response" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="531,186.993,527,192.993,531,198.993,535,192.993,531,186.993" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[06307592641728dde2435b11d4feeb56]
+reverse link EmailValidatorService to EmailRepImpl--><g id="link_EmailValidatorService_EmailRepImpl"><path d="M942,618.043 C942,618.043 541.64,630.953 431,658.043 C391.36,667.743 349.45,684.653 314.77,700.633 " fill="none" id="EmailValidatorService-backto-EmailRepImpl" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[f53965fd62e5a9dc3137f99bb19b58de]
+reverse link EmailValidatorService to AbstractImpl--><g id="link_EmailValidatorService_AbstractImpl"><path d="M942,618.043 C942,618.043 867.49,664.853 810.58,700.603 " fill="none" id="EmailValidatorService-backto-AbstractImpl" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[0d5142d3721a38f1bd4ef16b709c9116]
+reverse link EmailValidatorService to SendgridImpl--><g id="link_EmailValidatorService_SendgridImpl"><path d="M942,618.043 C942,618.043 1016.9,664.853 1074.09,700.603 " fill="none" id="EmailValidatorService-backto-SendgridImpl" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[4aa01cdb586df44590394f8afa9faee0]
+reverse link EmailValidatorService to ZerobounceImpl--><g id="link_EmailValidatorService_ZerobounceImpl"><path d="M942,618.043 C942,618.043 1031.6,634.203 1104,641.043 C1263.03,656.063 1306.04,628.393 1463,658.043 C1512.43,667.383 1565.54,684.443 1609.55,700.643 " fill="none" id="EmailValidatorService-backto-ZerobounceImpl" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[ddfe32b966a6947ceb42ee23fd8435cf]
+link EmailValidatorAction to EmailValidator--><g id="link_EmailValidatorAction_EmailValidator"><path codeLine="131" d="M604.56,185.483 C669.08,220.513 763.26,271.643 833.19,309.613 " fill="none" id="EmailValidatorAction-to-EmailValidator" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#454645" points="837.28,311.833,831.2748,304.0267,832.8845,309.4497,827.4616,311.0595,837.28,311.833" style="stroke:#454645;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="245" x="758.5" y="228.6113">Calls both methods in sequential order</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="235" x="763.5" y="243.9219">1. Checks email with selected service</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="280" x="741" y="259.2324">2. Saves result as External Activity on Pardot</text></g><!--MD5=[b6faf6109c6828f2d28b9fcbef67cf77]
+link EmailValidator to EmailValidatorService--><g id="link_EmailValidator_EmailValidatorService"><path codeLine="132" d="M930.79,410.113 C932.48,431.433 934.52,457.023 936.39,480.513 " fill="none" id="EmailValidator-to-EmailValidatorService" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#454645" points="936.76,485.253,940.0274,475.9619,936.3601,480.269,932.0531,476.6017,936.76,485.253" style="stroke:#454645;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="237" x="935" y="453.6113">Uses selected service implementation</text></g><!--MD5=[88cb9ff91306f876dd4cbfa9059e2694]
+@startuml EmailValidator-ClassDiagram
+!theme vibrant
+title Email Validator for Pardot (Simplified Class Diagram)
+
+header
+<font color=navy>NOTE:</font>
+Only main classes are shown here
+endheader
+
+skinparam groupInheritance 2
+skinparam PackageStyle Rectangle
+'skinparam linetype polyline
+
+package "Email Validator - Invocable Action" {
+    class EmailValidatorAction {
+        @InvocableMethod
+        +getEmailReputation(List<ProspectDto>) : List<Response>
+        
+    }
+
+    class EmailValidatorAction.Response {
+        +success : Boolean
+        +resultMessage : String
+
+    }
+    EmailValidatorAction*- -EmailValidatorAction.Response
+}
+
+package "Email Validator" {
+    
+
+    class EmailValidator {
+        EmailValidator(String service)
+        - - -
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+
+    class SettingService {
+        +getSettingValue(String)
+        
+        
+    }
+
+    class Logger {
+        +{static}writeLogsToDatabase()
+        +{static}log()
+    }
+
+    class ProspectDto {
+        +email : String
+        +service : String
+        +businessUnitId : Id
+        +isCalloutSuccess() : Boolean
+    }
+
+
+    class ExternalActivity {
+        +email : String
+        +extension : String
+        +type : String
+        +value : String
+    }
+
+interface EmailValidatorService <<Strategy>> {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+
+
+}
+
+
+
+'package "Apex Exceptions" {
+'class ExternalServiceException implements Exception {}
+'class MissingSettingException implements Exception {}
+'class NameException implements Exception {}
+'SettingService*-down-MissingSettingException
+'EmailValidator*-down-NameException
+'}
+
+
+
+
+package "EmailRep.io" {
+    class EmailRepImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+    note bottom of EmailRepImpl
+    **Implements Email Validation using EmailRep.io API:**
+    https://emailrep.io/
+    end note
+}
+
+package "Abstract API" {
+    class AbstractImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+    note bottom of AbstractImpl
+    **Implements Email Validation using Abstract API:**
+    https://www.abstractapi.com/api/email-verification-validation-api
+    end note
+    
+}
+
+package "Sendgrid (Twilio)" {
+    class SendgridImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+    note bottom of SendgridImpl
+    **Implements Email Validation using Twilio's Sendgrid API:**
+    https://sendgrid.com/solutions/email-api/email-address-validation-api/
+    end note
+}
+
+package "ZeroBounce" {
+    class ZerobounceImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+
+    note bottom of ZerobounceImpl
+    **Implements Email Validation using ZeroBounce API:**
+    https://www.zerobounce.net/docs/email-validation-api-quickstart#validate_emails__v2__
+    end note
+}
+
+EmailValidatorAction -[dashed]down-> EmailValidator : Calls both methods in sequential order\n1. Checks email with selected service\n2. Saves result as External Activity on Pardot
+EmailValidator -[dashed]down-> EmailValidatorService : Uses selected service implementation
+ 
+
+
+
+
+
+@enduml
+
+@startuml EmailValidator-ClassDiagram
+skinparam BackgroundColor FFFFFF
+skinparam shadowing false
+skinparam RoundCorner 7
+skinparam ArrowColor 454645
+skinparam FontColor 454645
+skinparam SequenceLifeLineBorderColor 696969
+skinparam SequenceGroupHeaderFontColor 454645
+skinparam SequenceGroupFontColor 696969
+skinparam SequenceGroupBorderColor 696969
+skinparam SequenceGroupBorderThickness 1
+
+skinparam sequenceDivider {
+    BorderColor 454645
+    BorderThickness 1
+    FontColor 454645
+}
+
+skinparam participant {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFFFFF
+    BorderThickness 1.5
+}
+
+skinparam database {
+    BackgroundColor 00FFFF
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam entity {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam note {
+    BackgroundColor 7FFFD4
+    BorderColor 454645
+    FontColor 454645
+    BorderThickness 1.5
+}
+
+skinparam actor {
+    BackgroundColor 454645
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam boundary {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam control {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam collections {
+    BackgroundColor FF5F42
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam queue {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFF
+    BorderThickness 1.5
+}
+title Email Validator for Pardot (Simplified Class Diagram)
+
+header
+<font color=navy>NOTE:</font>
+Only main classes are shown here
+endheader
+
+skinparam groupInheritance 2
+skinparam PackageStyle Rectangle
+
+package "Email Validator - Invocable Action" {
+    class EmailValidatorAction {
+        @InvocableMethod
+        +getEmailReputation(List<ProspectDto>) : List<Response>
+        
+    }
+
+    class EmailValidatorAction.Response {
+        +success : Boolean
+        +resultMessage : String
+
+    }
+    EmailValidatorAction*- -EmailValidatorAction.Response
+}
+
+package "Email Validator" {
+    
+
+    class EmailValidator {
+        EmailValidator(String service)
+        - - -
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+
+    class SettingService {
+        +getSettingValue(String)
+        
+        
+    }
+
+    class Logger {
+        +{static}writeLogsToDatabase()
+        +{static}log()
+    }
+
+    class ProspectDto {
+        +email : String
+        +service : String
+        +businessUnitId : Id
+        +isCalloutSuccess() : Boolean
+    }
+
+
+    class ExternalActivity {
+        +email : String
+        +extension : String
+        +type : String
+        +value : String
+    }
+
+interface EmailValidatorService <<Strategy>> {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+
+
+}
+
+
+
+
+
+
+
+package "EmailRep.io" {
+    class EmailRepImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+    note bottom of EmailRepImpl
+    **Implements Email Validation using EmailRep.io API:**
+    https://emailrep.io/
+    end note
+}
+
+package "Abstract API" {
+    class AbstractImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+    note bottom of AbstractImpl
+    **Implements Email Validation using Abstract API:**
+    https://www.abstractapi.com/api/email-verification-validation-api
+    end note
+    
+}
+
+package "Sendgrid (Twilio)" {
+    class SendgridImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+    note bottom of SendgridImpl
+    **Implements Email Validation using Twilio's Sendgrid API:**
+    https://sendgrid.com/solutions/email-api/email-address-validation-api/
+    end note
+}
+
+package "ZeroBounce" {
+    class ZerobounceImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+
+    note bottom of ZerobounceImpl
+    **Implements Email Validation using ZeroBounce API:**
+    https://www.zerobounce.net/docs/email-validation-api-quickstart#validate_emails__v2__
+    end note
+}
+
+EmailValidatorAction -[dashed]down-> EmailValidator : Calls both methods in sequential order\n1. Checks email with selected service\n2. Saves result as External Activity on Pardot
+EmailValidator -[dashed]down-> EmailValidatorService : Uses selected service implementation
+ 
+
+
+
+
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: CH
+--></g></svg>

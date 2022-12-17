@@ -1,0 +1,12 @@
+.DS_Store
+.sfdx
+.sf
+.sfdx/**
+.sf/**
+mdapipkg/**
+.vscode**/**
+.Rproj.user
+.Rhistory
+node_modules/**
+config/**
+script/**

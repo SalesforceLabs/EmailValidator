@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EmailValidator</fullName>
+    <fields>Name</fields>
+    <fields>ServiceName__c</fields>
+    <fields>Email__c</fields>
+    <fields>StatusIcon__c</fields>
+    <fields>Message__c</fields>
+    <label>EmailValidator</label>
+</CompactLayout>
