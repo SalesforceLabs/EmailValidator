@@ -1,0 +1,140 @@
+@startuml EmailValidator-ClassDiagram
+!theme vibrant
+title Email Validator for Pardot (Simplified Class Diagram)
+
+header
+<font color=navy>NOTE:</font>
+Only main classes are shown here
+endheader
+
+skinparam groupInheritance 2
+skinparam PackageStyle Rectangle
+'skinparam linetype polyline
+
+package "Email Validator - Invocable Action" {
+    class EmailValidatorAction {
+        @InvocableMethod
+        +getEmailReputation(List<ProspectDto>) : List<Response>
+        
+    }
+
+    class EmailValidatorAction.Response {
+        +success : Boolean
+        +resultMessage : String
+
+    }
+    EmailValidatorAction*--EmailValidatorAction.Response
+}
+
+package "Email Validator" {
+    
+
+    class EmailValidator {
+        EmailValidator(String service)
+        ---
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+
+    class SettingService {
+        +getSettingValue(String)
+        
+        
+    }
+
+    class Logger {
+        +{static}writeLogsToDatabase()
+        +{static}log()
+    }
+
+    class ProspectDto {
+        +email : String
+        +service : String
+        +businessUnitId : Id
+        +isCalloutSuccess() : Boolean
+    }
+
+
+    class ExternalActivity {
+        +email : String
+        +extension : String
+        +type : String
+        +value : String
+    }
+
+interface EmailValidatorService <<Strategy>> {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+
+
+}
+
+
+
+'package "Apex Exceptions" {
+'class ExternalServiceException implements Exception {}
+'class MissingSettingException implements Exception {}
+'class NameException implements Exception {}
+'SettingService*-down-MissingSettingException
+'EmailValidator*-down-NameException
+'}
+
+
+
+
+package "EmailRep.io" {
+    class EmailRepImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+    note bottom of EmailRepImpl
+    **Implements Email Validation using EmailRep.io API:**
+    https://emailrep.io/
+    end note
+}
+
+package "Abstract API" {
+    class AbstractImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+    note bottom of AbstractImpl
+    **Implements Email Validation using Abstract API:**
+    https://www.abstractapi.com/api/email-verification-validation-api
+    end note
+    
+}
+
+package "Sendgrid (Twilio)" {
+    class SendgridImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+    note bottom of SendgridImpl
+    **Implements Email Validation using Twilio's Sendgrid API:**
+    https://sendgrid.com/solutions/email-api/email-address-validation-api/
+    end note
+}
+
+package "ZeroBounce" {
+    class ZerobounceImpl implements EmailValidatorService {
+        +checkEmail(ProspectDto)
+        +logExternalActivity(ProspectDto)
+    }
+
+    note bottom of ZerobounceImpl
+    **Implements Email Validation using ZeroBounce API:**
+    https://www.zerobounce.net/docs/email-validation-api-quickstart#validate_emails__v2__
+    end note
+}
+
+EmailValidatorAction -[dashed]down-> EmailValidator : Calls both methods in sequential order\n1. Checks email with selected service\n2. Saves result as External Activity on Pardot
+EmailValidator -[dashed]down-> EmailValidatorService : Uses selected service implementation
+ 
+
+
+
+
+
+@enduml
