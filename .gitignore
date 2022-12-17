@@ -1,10 +1,12 @@
 .DS_Store
-.sfdx/tools/apex.db
+.sfdx
+.sf
 .sfdx/**
 .sf/**
 mdapipkg/**
-.vscode/**
+.vscode**/**
 .Rproj.user
 .Rhistory
 node_modules/**
 config/**
+script/**
