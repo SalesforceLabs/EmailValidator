@@ -20,7 +20,7 @@ public with sharing class AbstractImpl implements EmailValidatorService {
                 throw new EmailValidator.ExternalServiceException(prospect.service);
             }
             AbstractApiResponse abstractResponse = (AbstractApiResponse) JSON.deserialize(response.getBody(),AbstractApiResponse.class);
-            prospect.isPotentialSpam = abstractResponse.quality_score < 0.5;
+            prospect.isPotentialSpam = abstractResponse.quality_score < getQualityScoreThreshold();
             Logger.log(prospect.businessUnitId, prospect.service, prospect.email, 'Success', 'Check Email - GET Request', response.getBody());
         } catch (System.JSONException e) {
             Logger.log(prospect.businessUnitId, prospect.service, prospect.email, 'Error', 'JSONException', response.getBody());
@@ -89,6 +89,15 @@ public with sharing class AbstractImpl implements EmailValidatorService {
             throw new SettingService.MissingSettingException('Pardot_Named_Credential');
         }
         return pardotNamedCredential;
+    }
+
+    private Double getQualityScoreThreshold(){
+        String thresholdString = SettingService.getSettingValue('Abstract_Quality_Score_Threshold');
+        if(thresholdString==null){
+            throw new SettingService.MissingSettingException('Abstract_Quality_Score_Threshold');
+        }
+        Decimal threshold = decimal.valueOf(thresholdString);
+        return threshold;
     }
 
     private String buildRequestBody(ProspectDto prospect){
