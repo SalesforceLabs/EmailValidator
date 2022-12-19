@@ -16,14 +16,14 @@ For the time being, the following APIs have been integrated with Email Validator
 
 **NOTE:** You need to have an API key from at least one of the above services to use Email Validator for Pardot (all of them provide free tiers to be able to test it).
 
-## Setup & User Guides
-All documentation can be found on the [Wiki](https://github.com/SalesforceLabs/EmailValidator/wiki) of this GitHub project:
-* [Setup Guide](https://github.com/SalesforceLabs/EmailValidator/wiki/1.-Setup-Guide)
-* [User Guide](https://github.com/SalesforceLabs/EmailValidator/wiki/2.-User-Guide)
-* [Technical Details](#)
-
 ## Value Proposition
 Our value proposition is:
 * Save Pardot Admin time
 * Increase your database hygiene by deleting inactive/low reputation prospects
 * Decrease your bounce rates and increase your ROI
+
+## Setup & User Guides
+All documentation can be found on the [Wiki](https://github.com/SalesforceLabs/EmailValidator/wiki) of this GitHub project:
+* [Setup Guide](https://github.com/SalesforceLabs/EmailValidator/wiki/1.-Setup-Guide)
+* [User Guide](https://github.com/SalesforceLabs/EmailValidator/wiki/2.-User-Guide)
+* [Technical Details](#)
