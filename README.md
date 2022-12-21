@@ -14,7 +14,8 @@ For the time being, the following APIs have been integrated with Email Validator
 * Twilio's **Sendgrid**: https://sendgrid.com/solutions/email-api/email-address-validation-api/
 * **Zerobounce**: https://www.zerobounce.net/docs/email-validation-api-quickstart#validate_emails__v2__
 
-**NOTE:** You need to have an API key from at least one of the above services to use Email Validator for Pardot (all of them provide free tiers to be able to test it).
+**NOTE:** You need to have an API key from at least one of the above services to use Email Validator for Pardot 
+(almost all of them provide free tiers to be able to test it).
 
 ## Value Proposition
 Our value proposition is:
