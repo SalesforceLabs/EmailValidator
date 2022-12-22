@@ -27,4 +27,4 @@ Our value proposition is:
 All documentation can be found on the [Wiki](https://github.com/SalesforceLabs/EmailValidator/wiki) of this GitHub project:
 * [Setup Guide](https://github.com/SalesforceLabs/EmailValidator/wiki/1.-Setup-Guide)
 * [User Guide](https://github.com/SalesforceLabs/EmailValidator/wiki/2.-User-Guide)
-* [Technical Details](#)
+* [Technical Details](https://github.com/SalesforceLabs/EmailValidator/wiki/Technical-Details)
