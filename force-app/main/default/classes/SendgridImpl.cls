@@ -29,7 +29,7 @@ public with sharing class SendgridImpl implements EmailValidatorService {
         } catch (System.JSONException e) {
             Logger.log(prospect.businessUnitId, prospect.service, prospect.email, 'Error', 'JSONException', response.getBody());
         } catch (SettingService.MissingSettingException e) {
-            Logger.log(prospect.businessUnitId, prospect.service, prospect.email, 'Error', 'MissingSettingException', e.getMessage()+' is missing from Email_Validator_Setting__mdt');
+            Logger.log(prospect.businessUnitId, prospect.service, prospect.email, 'Error', 'MissingSettingException', e.getMessage()+' is missing from EmailValidatorSetting__c');
         } catch (EmailValidator.ExternalServiceException e) {
             Logger.log(prospect.businessUnitId, prospect.service, prospect.email, 'Error', 'ExternalServiceException', response.getBody());
         } catch (Exception e) {
@@ -57,7 +57,7 @@ public with sharing class SendgridImpl implements EmailValidatorService {
             }
             Logger.log(prospect.businessUnitId, 'Pardot', prospect.email, 'Success', 'POST Request', response.getBody());
         } catch (SettingService.MissingSettingException e) {
-            Logger.log(prospect.businessUnitId, 'Pardot', prospect.email, 'Error', 'MissingSettingException', e.getMessage()+' is missing from Email_Validator_Setting__mdt');
+            Logger.log(prospect.businessUnitId, 'Pardot', prospect.email, 'Error', 'MissingSettingException', e.getMessage()+' is missing from EmailValidatorSetting__c');
         } catch (EmailValidator.ExternalServiceException e) {
             Logger.log(prospect.businessUnitId, 'Pardot', prospect.email, 'Error', 'ExternalServiceException', 'Status Code:\n'+response.getStatusCode()+'\nBody:\n'+response.getBody());
         } catch (Exception e) {
@@ -87,7 +87,7 @@ public with sharing class SendgridImpl implements EmailValidatorService {
     }
     
     private String getAPIKey(){
-        String apiKey = SettingService.getSettingValue('Sendgrid_API_Key');
+        String apiKey = SettingService.getProtectedSettingValue('Sendgrid_API_Key');
         if(apiKey==null){
             throw new SettingService.MissingSettingException('Sendgrid_API_Key');
         }
@@ -95,7 +95,7 @@ public with sharing class SendgridImpl implements EmailValidatorService {
     }
     
     private String getPardotNamedCredential(){
-        String pardotNamedCredential = SettingService.getSettingValue('Pardot_Named_Credential');
+        String pardotNamedCredential = SettingService.getPublicSettingValue('Pardot_Named_Credential');
         if(pardotNamedCredential==null){
             throw new SettingService.MissingSettingException('Pardot_Named_Credential');
         }
@@ -115,8 +115,8 @@ public with sharing class SendgridImpl implements EmailValidatorService {
         ExternalActivity ea = new ExternalActivity();
         ea.extension = 'Email_Validator';
         ea.type = 'Email_Approved_Sendgrid';
-        String pass = SettingService.getSettingValue('External_Activity_Value_Pass');
-        String warn = SettingService.getSettingValue('External_Activity_Value_Warn');
+        String pass = SettingService.getPublicSettingValue('External_Activity_Value_Pass');
+        String warn = SettingService.getPublicSettingValue('External_Activity_Value_Warn');
         ea.value = prospect.isPotentialSpam ? warn : pass;
         ea.email = prospect.email;
         return JSON.serialize(ea);

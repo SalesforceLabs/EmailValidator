@@ -1,0 +1,25 @@
+<template>
+    <lightning-card  title="Abstract" icon-name="standard:service_crew">
+        <lightning-button label="Save" slot="actions" onclick={handleSave}></lightning-button>
+        <p class="slds-p-horizontal_small">
+            <lightning-input
+                type="password"
+                label="API KEY"
+                name="abstract_api_key"
+                placeholder="Enter the new API Key"
+                onchange={handlePasswordChange}
+            ></lightning-input>
+        </p>
+        <p class="slds-p-horizontal_small">
+            <lightning-slider
+                label="threshold"
+                value={val}
+                min=0
+                max=1
+                step=0.01
+                onchange={handleSliderChange}
+            ></lightning-slider>
+        </p>
+        <p slot="footer"><a href="#">Get Your API Key</a></p>
+    </lightning-card>
+</template>

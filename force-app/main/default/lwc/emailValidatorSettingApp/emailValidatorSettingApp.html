@@ -1,0 +1,55 @@
+<template>
+    <lightning-card  title="Email Validator for Pardot - Setup Tool" icon-name="utility:settings" heading-level="1">
+        <div>
+            <lightning-layout multiple-rows="true">
+                <lightning-layout-item padding="around-medium" flexibility="auto">
+                    <div class="slds-section slds-is-open">
+                        <h3 class="slds-section__title slds-theme_shade">
+                            <span class="slds-truncate slds-p-horizontal_small" title="Pardot Settings">Pardot Settings</span>
+                        </h3>
+                        <div aria-hidden="false" class="slds-section__content">
+                            <p>The settings below are related to the integration with Pardot, in particular how we store the harmonized results of the external validation services into External Activity values.
+                                <br>These parameters are set by default as <b>Pass</b> and <b>Warn</b>.</p>
+                        </div>
+                    </div>
+                    <c-email-validator-setting-external-activity></c-email-validator-setting-external-activity>
+                    
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-medium" size="12">
+                    <div class="slds-section slds-is-open">
+                        <h3 class="slds-section__title slds-theme_shade">
+                            <span class="slds-truncate slds-p-horizontal_small" title="External Email Validation APIs">External Email Validation APIs</span>
+                        </h3>
+                        <div aria-hidden="false" class="slds-section__content">
+                            <p>Below you can configure specific settings of each supported Email Validation service (e.g. API keys).<br/>You can choose to use one or more services.</p>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-medium" size="12">
+                    <lightning-layout multiple-rows="true">
+                        <lightning-layout-item padding="around-medium" flexibility="auto" size="6" large-device-size="3" medium-device-size="6" small-device-size="12">
+                            <c-email-validator-setting-abstract></c-email-validator-setting-abstract>
+                        </lightning-layout-item>
+                        <lightning-layout-item padding="around-medium" flexibility="auto" size="6" large-device-size="3" medium-device-size="6" small-device-size="12">
+                            <!-- TODO: Replace with correct component-->
+                            <c-email-validator-setting-abstract></c-email-validator-setting-abstract>
+                        </lightning-layout-item>
+                        <lightning-layout-item padding="around-medium" flexibility="auto" size="6" large-device-size="3" medium-device-size="6" small-device-size="12">
+                            <!-- TODO: Replace with correct component-->
+                            <c-email-validator-setting-abstract></c-email-validator-setting-abstract>
+                        </lightning-layout-item>
+                        <lightning-layout-item padding="around-medium" flexibility="auto" size="6" large-device-size="3" medium-device-size="6" small-device-size="12">
+                            <!-- TODO: Replace with correct component-->
+                            <c-email-validator-setting-abstract></c-email-validator-setting-abstract>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+        <div slot="footer">
+            <div class="page-footer page-section">
+                <h2>For further support on Email Validator for Pardot, please check the documentation on our <a href="https://github.com/SalesforceLabs/EmailValidator/wiki" target="_blank">Wiki</a> </h2>
+            </div>
+        </div>
+    </lightning-card>
+</template>

@@ -37,7 +37,7 @@ package "Email Validator" {
     }
 
     class SettingService {
-        +getSettingValue(String)
+        +getProtectedSettingValue(String)
         
         
     }

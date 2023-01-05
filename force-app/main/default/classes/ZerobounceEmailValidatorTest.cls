@@ -23,9 +23,9 @@ private with sharing class ZerobounceEmailValidatorTest {
     @isTest
     static void testZerobounceApiSuccessValid(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Zerobounce_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Zerobounce_API_Key' => new EmailValidatorSetting__c(Name = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot')
         };
         Test.startTest();
         //Set mock class callout
@@ -41,9 +41,9 @@ private with sharing class ZerobounceEmailValidatorTest {
     @isTest
     static void testZerobounceApiSuccessRisky(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Zerobounce_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Zerobounce_API_Key' => new EmailValidatorSetting__c(Name = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot')
         };
         Test.startTest();
         //Set mock class callout
@@ -59,7 +59,7 @@ private with sharing class ZerobounceEmailValidatorTest {
     @isTest
     static void testZerobounceApiServiceSettingException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>();
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>();
         Test.startTest();
         //Set mock class callout
         Test.setMock(HttpCalloutMock.class, new ZerobounceApiMock(200));
@@ -75,8 +75,8 @@ private with sharing class ZerobounceEmailValidatorTest {
     @isTest
     static void testZerobounceApiPardotSettingException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Zerobounce_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Zerobounce_API_Key' => new EmailValidatorSetting__c(Name = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP')
         };
         Test.startTest();
         //Set mock class callout
@@ -94,9 +94,9 @@ private with sharing class ZerobounceEmailValidatorTest {
     @isTest
     static void testZerobounceApiExternalServiceException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Zerobounce_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Zerobounce_API_Key' => new EmailValidatorSetting__c(Name = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot')
         };
         Test.startTest();
         //Set mock class callout
@@ -113,9 +113,9 @@ private with sharing class ZerobounceEmailValidatorTest {
     @isTest
     static void testZerobounceApiPardotException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Zerobounce_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Zerobounce_API_Key' => new EmailValidatorSetting__c(Name = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot')
         };
         Test.startTest();
         //Set mock class callout
@@ -133,9 +133,9 @@ private with sharing class ZerobounceEmailValidatorTest {
     @isTest
     static void testZerobounceApiJsonException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Zerobounce_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Zerobounce_API_Key' => new EmailValidatorSetting__c(Name = 'Zerobounce_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot')
         };
         Test.startTest();
         //Set mock class callout

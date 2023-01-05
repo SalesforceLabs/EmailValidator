@@ -22,10 +22,10 @@ private with sharing class AbstractEmailValidatorTest {
     @isTest
     static void testAbstractApiSuccessHighQualityScore(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Abstract_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Abstract_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot'),
-            'Abstract_Quality_Score_Threshold' => new Email_Validator_Setting__mdt(developerName = 'Abstract_Quality_Score_Threshold', value__c = '0.5')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Abstract_API_Key' => new EmailValidatorSetting__c(Name = 'Abstract_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot'),
+            'Abstract_Quality_Score_Threshold' => new EmailValidatorSetting__c(Name = 'Abstract_Quality_Score_Threshold', value__c = '0.5')
         };
         Test.startTest();
         //Set mock class callout
@@ -41,10 +41,10 @@ private with sharing class AbstractEmailValidatorTest {
     @isTest
     static void testAbstractApiSuccessLowQualityScore(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Abstract_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Abstract_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot'),
-            'Abstract_Quality_Score_Threshold' => new Email_Validator_Setting__mdt(developerName = 'Abstract_Quality_Score_Threshold', value__c = '0.5')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Abstract_API_Key' => new EmailValidatorSetting__c(Name = 'Abstract_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot'),
+            'Abstract_Quality_Score_Threshold' => new EmailValidatorSetting__c(Name = 'Abstract_Quality_Score_Threshold', value__c = '0.5')
         };
         Test.startTest();
         //Set mock class callout
@@ -60,7 +60,7 @@ private with sharing class AbstractEmailValidatorTest {
     @isTest
     static void testAbstractApiServiceSettingException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>();
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>();
         Test.startTest();
         //Set mock class callout
         Test.setMock(HttpCalloutMock.class, new AbstractApiMock(200));
@@ -76,9 +76,9 @@ private with sharing class AbstractEmailValidatorTest {
     @isTest
     static void testAbstractApiPardotSettingException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Abstract_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Abstract_API_Key', value__c = 'QWERTZUIOP'),
-            'Abstract_Quality_Score_Threshold' => new Email_Validator_Setting__mdt(developerName = 'Abstract_Quality_Score_Threshold', value__c = '0.5')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Abstract_API_Key' => new EmailValidatorSetting__c(Name = 'Abstract_API_Key', value__c = 'QWERTZUIOP'),
+            'Abstract_Quality_Score_Threshold' => new EmailValidatorSetting__c(Name = 'Abstract_Quality_Score_Threshold', value__c = '0.5')
         };
         Test.startTest();
         //Set mock class callout
@@ -96,10 +96,10 @@ private with sharing class AbstractEmailValidatorTest {
     @isTest
     static void testAbstractApiExternalServiceException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Abstract_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Abstract_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot'),
-            'Abstract_Quality_Score_Threshold' => new Email_Validator_Setting__mdt(developerName = 'Abstract_Quality_Score_Threshold', value__c = '0.5')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Abstract_API_Key' => new EmailValidatorSetting__c(Name = 'Abstract_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot'),
+            'Abstract_Quality_Score_Threshold' => new EmailValidatorSetting__c(Name = 'Abstract_Quality_Score_Threshold', value__c = '0.5')
         };
         Test.startTest();
         //Set mock class callout
@@ -116,10 +116,10 @@ private with sharing class AbstractEmailValidatorTest {
     @isTest
     static void testAbstractApiJsonException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'Abstract_API_Key' => new Email_Validator_Setting__mdt(developerName = 'Abstract_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot'),
-            'Abstract_Quality_Score_Threshold' => new Email_Validator_Setting__mdt(developerName = 'Abstract_Quality_Score_Threshold', value__c = '0.5')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'Abstract_API_Key' => new EmailValidatorSetting__c(Name = 'Abstract_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot'),
+            'Abstract_Quality_Score_Threshold' => new EmailValidatorSetting__c(Name = 'Abstract_Quality_Score_Threshold', value__c = '0.5')
         };
         Test.startTest();
         //Set mock class callout
