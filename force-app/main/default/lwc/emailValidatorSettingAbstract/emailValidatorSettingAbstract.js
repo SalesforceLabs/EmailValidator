@@ -7,7 +7,8 @@ import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 export default class EmailValidatorSettingAbstract extends LightningElement {
     
     error;
-    @track val = 50;
+    defaultVal = 50;
+    @track val = this.defaultVal;
     password;
 
     apikeyIsSet = false;
@@ -47,11 +48,11 @@ export default class EmailValidatorSettingAbstract extends LightningElement {
             if(data['Abstract_Quality_Score_Threshold']!=''){
                 this.val = +data['Abstract_Quality_Score_Threshold']*100;
             } else {
-                this.val = 50;
+                this.val = this.defaultVal;
             }
             this.error = undefined;
         } else if (error) {
-            this.val = 50;
+            this.val = this.defaultVal;
             this.error = error;
         }
     }
@@ -78,7 +79,7 @@ export default class EmailValidatorSettingAbstract extends LightningElement {
     
 
     handleReset(){
-        saveSettings({threshold: 0.5,password: ''})
+        saveSettings({threshold: this.defaultVal/100,password: ''})
         .then((result)=>{
             this.password=null;
             this.template.querySelectorAll('lightning-input').forEach(element => {
@@ -90,7 +91,7 @@ export default class EmailValidatorSettingAbstract extends LightningElement {
                 variant: 'info',
             });
             this.dispatchEvent(evt);
-            this.val = 50;
+            this.val = this.defaultVal;
             this.checkSettings(); 
         })
         .catch((error)=>{
