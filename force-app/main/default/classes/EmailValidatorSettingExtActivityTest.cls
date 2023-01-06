@@ -31,7 +31,7 @@ private with sharing class EmailValidatorSettingExtActivityTest {
         Test.startTest();
         Map<String,String> settingMap = EmailValidatorSettingExternalActivity.getSettings();
         System.assertEquals(null, settingMap.get(EmailValidatorSettingExternalActivity.EXTERNAL_ACTIVITY_VALUE_PASS),'Expecting non existing custom setting');
-        EmailValidatorSettingExternalActivity.saveSettings('Pass',null,null);
+        EmailValidatorSettingExternalActivity.saveSettings(null,'Pass',null);
         settingMap = EmailValidatorSettingExternalActivity.getSettings();
         Test.stopTest();
         System.assertEquals('Pass', settingMap.get(EmailValidatorSettingExternalActivity.EXTERNAL_ACTIVITY_VALUE_PASS),'Expecting existing custom setting');
