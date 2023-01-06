@@ -1,12 +1,12 @@
 public with sharing class EmailValidatorSettingApp {
     
-    @AuraEnabled
-    public static void getSettings(List<String> settingNames) {
-        List<String> fieldsToExclude = SettingService.getAllAPIKeySettingNames();
-    }
-
-    @AuraEnabled
-    public static void saveSettings() {
-        List<String> fieldsToExclude = SettingService.getAllAPIKeySettingNames();
+    @AuraEnabled(cacheable=false)
+    public static Boolean settingExists(String settingName){
+        try {
+            EmailValidatorSetting__c evs = EmailValidatorSetting__c.getValues(settingName);
+            return evs != null;
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
     }
 }

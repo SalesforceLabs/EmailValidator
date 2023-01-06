@@ -1,25 +1,58 @@
 <template>
-    <lightning-card  title="Abstract" icon-name="standard:service_crew">
+    <lightning-card  title="Abstract" icon-name="standard:service_crew" class="mycard">
         <lightning-button label="Save" slot="actions" onclick={handleSave}></lightning-button>
-        <p class="slds-p-horizontal_small">
-            <lightning-input
-                type="password"
-                label="API KEY"
-                name="abstract_api_key"
-                placeholder="Enter the new API Key"
-                onchange={handlePasswordChange}
-            ></lightning-input>
-        </p>
-        <p class="slds-p-horizontal_small">
-            <lightning-slider
-                label="threshold"
-                value={val}
-                min=0
-                max=1
-                step=0.01
-                onchange={handleSliderChange}
-            ></lightning-slider>
-        </p>
+        <lightning-layout multiple-rows="true" vertical-align="top">
+            
+            <lightning-layout-item size="2" >
+                <template if:true={apikeyIsSet}>
+                    
+                    <lightning-icon icon-name="utility:success" alternative-text="Configured!" variant="success" title="configuration available"></lightning-icon>
+                    
+                </template>
+                <template if:false={apikeyIsSet}>
+                    
+                    <lightning-icon icon-name="utility:warning" alternative-text="Missing Configuration!" variant="warning" title="configuration missing"></lightning-icon>
+                    
+                </template>
+            </lightning-layout-item>
+            <lightning-layout-item size="10">
+                <p class="slds-p-horizontal_small">
+                    <lightning-input
+                    type="password"
+                    label="API KEY"
+                    name="abstract_api_key"
+                    placeholder="Enter the new API Key"
+                    onchange={handlePasswordChange}
+                    ></lightning-input>
+                </p>
+            </lightning-layout-item>
+            <lightning-layout-item size="2">
+                <template if:true={thresholdIsSet}>
+                    
+                    <lightning-icon icon-name="utility:success" alternative-text="Configured!" variant="success" title="configuration available"></lightning-icon>
+                    
+                </template>
+                <template if:false={thresholdIsSet}>
+                    
+                    <lightning-icon icon-name="utility:warning" alternative-text="Missing Configuration!" variant="warning" title="configuration missing"></lightning-icon>
+                    
+                </template>
+            </lightning-layout-item>
+            <lightning-layout-item size="10">
+                <p class="slds-p-horizontal_small">
+                    <lightning-slider
+                    label="Quality Score Threshold (%)"
+                    value={val}
+                    min=0
+                    max=100
+                    step=1
+                    onchange={handleSliderChange}
+                    ></lightning-slider>
+                </p>
+            </lightning-layout-item>
+        </lightning-layout>
+        
+        
         <p slot="footer"><a href="https://app.abstractapi.com/users/signup?target=/api/email-validation/pricing/select">Get Your API Key</a></p> 
     </lightning-card>
 </template>
