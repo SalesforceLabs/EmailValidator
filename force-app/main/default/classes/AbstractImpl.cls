@@ -111,7 +111,7 @@ public with sharing class AbstractImpl implements EmailValidatorService {
 		return JSON.serialize(ea);
     }
     
-    @SuppressWarnings('PMD.VariableNamingConventions,PMD.TooManyFields')
+    @SuppressWarnings('PMD.VariableNamingConventions,PMD.TooManyFields,PMD.FieldNamingConventions')
     public class AbstractApiResponse {
         public String email;
         public String autocorrect;

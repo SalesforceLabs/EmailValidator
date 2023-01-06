@@ -132,7 +132,7 @@ public with sharing class EmailRepImpl implements EmailValidatorService {
     * Details
     * @description Mapping of the Details object returned within the JSON response of the EmailRep.io service
     */
-    @SuppressWarnings('PMD.VariableNamingConventions,PMD.TooManyFields')
+    @SuppressWarnings('PMD.VariableNamingConventions,PMD.TooManyFields,PMD.FieldNamingConventions')
     @testVisible
     private class Details {
         public Boolean blacklisted; 

@@ -59,7 +59,7 @@ export default class EmailValidatorSettingAbstract extends LightningElement {
 
     handleSave(){
         saveSettings({ threshold: this.val/100, password: this.password})
-        .then((result)=>{
+        .then(()=>{
             this.password=null;
             this.template.querySelectorAll('lightning-input').forEach(element => {
                 element.value = null;
@@ -80,7 +80,7 @@ export default class EmailValidatorSettingAbstract extends LightningElement {
 
     handleReset(){
         saveSettings({threshold: this.defaultVal/100,password: ''})
-        .then((result)=>{
+        .then(()=>{
             this.password=null;
             this.template.querySelectorAll('lightning-input').forEach(element => {
                 element.value = null;

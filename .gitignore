@@ -11,3 +11,4 @@ node_modules/**
 config/**
 script/**
 *.pdf
+docs/codescanner.html
