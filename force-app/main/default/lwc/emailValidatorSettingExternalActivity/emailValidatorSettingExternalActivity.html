@@ -1,8 +1,61 @@
 <template>
-    <lightning-card title="Pardot Named Credential & External Activity" icon-name="custom:custom30">
-        <lightning-button label="Save External Activity Settings" name="save" slot="actions"></lightning-button>
-        <lightning-input type="text" label="Pardot Named Credential (API Name)" name="pardotNamedCredential" min-length="1" placeholder="API Name of the Named Credential used by Salesforce to connect to Pardot API"></lightning-input>
-        <lightning-input type="text" label="Email Validation Pass value" name="pass" min-length="1" placeholder="Value shown when the Email Address is Valid" ></lightning-input>
-        <lightning-input type="text" label="Email Validation Warn value" name="warn" min-length="1" placeholder="Value shown when the Email Address is Potentially Spam" ></lightning-input>
-    </lightning-card>
+    <lightning-layout vertical-align="stretch">
+        <lightning-layout-item size="6">
+            <lightning-card title="Pardot Named Credential & External Activity" icon-name="custom:custom30">
+                <lightning-button label="Save External Activity Settings" name="save" slot="actions"></lightning-button>
+                
+                <lightning-layout multiple-rows="true" vertical-align="stretch">
+                    
+                    <lightning-layout-item size="2"  padding="around-small">
+                        <template if:true={apikeyIsSet}>
+                            
+                            <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:success" alternative-text="Configured!" variant="success" title="configuration available"></lightning-icon>
+                            
+                        </template>
+                        <template if:false={apikeyIsSet}>
+                            
+                            <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:warning" alternative-text="Missing Configuration!" variant="warning" title="configuration missing"></lightning-icon>
+                            
+                        </template>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="10" padding="around-small">
+                        <lightning-input type="text" label="Pardot Named Credential (API Name)" name="pardotNamedCredential" min-length="1" placeholder="API Name of the Named Credential used by Salesforce to connect to Pardot API"></lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="2"  padding="around-small">
+                        <template if:true={apikeyIsSet}>
+                            
+                            <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:success" alternative-text="Configured!" variant="success" title="configuration available"></lightning-icon>
+                            
+                        </template>
+                        <template if:false={apikeyIsSet}>
+                            
+                            <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:warning" alternative-text="Missing Configuration!" variant="warning" title="configuration missing"></lightning-icon>
+                            
+                        </template>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="10" padding="around-small">
+                        <lightning-input type="text" label="Email Validation Pass value" name="pass" min-length="1" placeholder="Value shown when the Email Address is Valid" ></lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="2"  padding="around-small">
+                        <template if:true={apikeyIsSet}>
+                            
+                            <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:success" alternative-text="Configured!" variant="success" title="configuration available"></lightning-icon>
+                            
+                        </template>
+                        <template if:false={apikeyIsSet}>
+                            
+                            <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:warning" alternative-text="Missing Configuration!" variant="warning" title="configuration missing"></lightning-icon>
+                            
+                        </template>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="10" padding="around-small">
+                        <lightning-input type="text" label="Email Validation Warn value" name="warn" min-length="1" placeholder="Value shown when the Email Address is Potentially Spam" ></lightning-input>
+                    </lightning-layout-item>
+                </lightning-layout>
+                
+                
+                
+            </lightning-card>
+        </lightning-layout-item>
+    </lightning-layout>
 </template>
