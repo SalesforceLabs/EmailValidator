@@ -35,7 +35,7 @@ public with sharing class AbstractApiMock implements HttpCalloutMock {
         emailValidationRequest.setEndpoint('callout:cardimir__Abstract');
 
         HttpRequest pardotRequest = new HttpRequest();
-        String pardotNamedCredential = SettingService.getPublicSettingValue('Pardot_Named_Credential');
+        String pardotNamedCredential = SettingService.getSettingValue('Pardot_Named_Credential');
         pardotRequest.setEndpoint('callout:'+pardotNamedCredential);
         
         HttpResponse res = new HttpResponse();

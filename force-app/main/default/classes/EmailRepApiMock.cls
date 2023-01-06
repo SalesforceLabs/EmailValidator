@@ -34,7 +34,7 @@ public with sharing class EmailRepApiMock implements HttpCalloutMock {
         emailValidationRequest.setEndpoint('callout:cardimir__EmailRep');
 
         HttpRequest pardotRequest = new HttpRequest();
-        String pardotNamedCredential = SettingService.getPublicSettingValue('Pardot_Named_Credential');
+        String pardotNamedCredential = SettingService.getSettingValue('Pardot_Named_Credential');
         pardotRequest.setEndpoint('callout:'+pardotNamedCredential);
         
         HttpResponse res = new HttpResponse();

@@ -76,7 +76,7 @@ public with sharing class AbstractImpl implements EmailValidatorService {
     }
     
     private String getAPIKey(){
-        String apiKey = SettingService.getProtectedSettingValue('Abstract_API_Key');
+        String apiKey = SettingService.getSettingValue('Abstract_API_Key');
         if(apiKey==null){
             throw new SettingService.MissingSettingException('Abstract_API_Key');
         }
@@ -84,7 +84,7 @@ public with sharing class AbstractImpl implements EmailValidatorService {
     }
 
     private String getPardotNamedCredential(){
-        String pardotNamedCredential = SettingService.getPublicSettingValue('Pardot_Named_Credential');
+        String pardotNamedCredential = SettingService.getSettingValue('Pardot_Named_Credential');
         if(pardotNamedCredential==null){
             throw new SettingService.MissingSettingException('Pardot_Named_Credential');
         }
@@ -92,7 +92,7 @@ public with sharing class AbstractImpl implements EmailValidatorService {
     }
 
     private Double getQualityScoreThreshold(){
-        String thresholdString = SettingService.getPublicSettingValue('Abstract_Quality_Score_Threshold');
+        String thresholdString = SettingService.getSettingValue('Abstract_Quality_Score_Threshold');
         if(thresholdString==null){
             throw new SettingService.MissingSettingException('Abstract_Quality_Score_Threshold');
         }
@@ -104,8 +104,8 @@ public with sharing class AbstractImpl implements EmailValidatorService {
         ExternalActivity ea = new ExternalActivity();
         ea.extension = 'Email_Validator';
         ea.type = 'Email_Approved_Abstract';
-        String pass = SettingService.getPublicSettingValue('External_Activity_Value_Pass');
-        String warn = SettingService.getPublicSettingValue('External_Activity_Value_Warn');
+        String pass = SettingService.getSettingValue('External_Activity_Value_Pass');
+        String warn = SettingService.getSettingValue('External_Activity_Value_Warn');
         ea.value = prospect.isPotentialSpam ? warn : pass;
         ea.email = prospect.email;
 		return JSON.serialize(ea);

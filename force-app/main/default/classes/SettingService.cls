@@ -8,23 +8,13 @@
 public with sharing class SettingService {
  
     @testVisible
-    private static Map<String, EmailValidatorSetting__c> protectedSettings;
+    private static Map<String, EmailValidatorSetting__c> settings;
 
-    @testVisible
-    private static Map<String, EmailValidator_PublicSetting__mdt> publicSettings;
-
-    public static String getProtectedSettingValue(String key){
-        if(protectedSettings==null){
-            protectedSettings = EmailValidatorSetting__c.getAll();
+    public static String getSettingValue(String key){
+        if(settings==null){
+            settings = EmailValidatorSetting__c.getAll();
         }
-        return protectedSettings.get(key)?.value__c;
-    }
-
-    public static String getPublicSettingValue(String key){
-        if(publicSettings==null){
-            publicSettings = EmailValidator_PublicSetting__mdt.getAll();
-        }
-        return publicSettings.get(key)?.value__c;
+        return settings.get(key)?.value__c;
     }
 
     public static List<String> getAllAPIKeySettingNames(){
