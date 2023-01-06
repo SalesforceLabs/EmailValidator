@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  title="EmailRep" icon-name="standard:service_crew">
+        <lightning-button label="Save" slot="actions" onclick={handleSave}></lightning-button>
+        <p class="slds-p-horizontal_small">
+            <lightning-input
+                type="password"
+                label="API KEY"
+                name="emailrep_api_key"
+                placeholder="Enter the new API Key"
+                onchange={handlePasswordChange}
+            ></lightning-input>
+        </p>
+        <p slot="footer"><a href="https://emailrep.io/key">Get Your API Key</a></p> 
+    </lightning-card>
+</template>
