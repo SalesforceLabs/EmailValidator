@@ -1,21 +1,21 @@
 <template>
-    <lightning-card  title="Abstract" icon-name="standard:service_crew" class="mycard">
+    <lightning-card  title="Abstract" icon-name="standard:service_crew" class="">
         <lightning-button label="Save" slot="actions" onclick={handleSave}></lightning-button>
-        <lightning-layout multiple-rows="true" vertical-align="top">
+        <lightning-layout multiple-rows="true" vertical-align="stretch">
             
-            <lightning-layout-item size="2" >
+            <lightning-layout-item size="2"  padding="around-small">
                 <template if:true={apikeyIsSet}>
                     
-                    <lightning-icon icon-name="utility:success" alternative-text="Configured!" variant="success" title="configuration available"></lightning-icon>
+                    <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:success" alternative-text="Configured!" variant="success" title="configuration available"></lightning-icon>
                     
                 </template>
                 <template if:false={apikeyIsSet}>
                     
-                    <lightning-icon icon-name="utility:warning" alternative-text="Missing Configuration!" variant="warning" title="configuration missing"></lightning-icon>
+                    <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:warning" alternative-text="Missing Configuration!" variant="warning" title="configuration missing"></lightning-icon>
                     
                 </template>
             </lightning-layout-item>
-            <lightning-layout-item size="10">
+            <lightning-layout-item size="10" padding="around-small">
                 <p class="slds-p-horizontal_small">
                     <lightning-input
                     type="password"
@@ -26,19 +26,19 @@
                     ></lightning-input>
                 </p>
             </lightning-layout-item>
-            <lightning-layout-item size="2">
+            <lightning-layout-item size="2"  padding="around-small">
                 <template if:true={thresholdIsSet}>
                     
-                    <lightning-icon icon-name="utility:success" alternative-text="Configured!" variant="success" title="configuration available"></lightning-icon>
+                    <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:success" alternative-text="Configured!" variant="success" title="configuration available"></lightning-icon>
                     
                 </template>
                 <template if:false={thresholdIsSet}>
                     
-                    <lightning-icon icon-name="utility:warning" alternative-text="Missing Configuration!" variant="warning" title="configuration missing"></lightning-icon>
+                    <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:warning" alternative-text="Missing Configuration!" variant="warning" title="configuration missing"></lightning-icon>
                     
                 </template>
             </lightning-layout-item>
-            <lightning-layout-item size="10">
+            <lightning-layout-item size="10" padding="around-small">
                 <p class="slds-p-horizontal_small">
                     <lightning-slider
                     label="Quality Score Threshold (%)"
