@@ -1,6 +1,9 @@
 <template>
     <lightning-card  title="Zerobounce" icon-name="standard:service_crew">
-        <lightning-button label="Save" slot="actions" onclick={handleSave}></lightning-button>
+        <lightning-button-group slot="actions">
+            <lightning-button-icon icon-name="utility:delete"    alternative-text="Reset"   class="slds-m-left_xx-small" title="Reset" onclick={handleReset}></lightning-button-icon>
+            <lightning-button label="Save"  onclick={handleSave} variant="brand"></lightning-button>
+        </lightning-button-group>
         <lightning-layout multiple-rows="true" vertical-align="stretch">
             
             <lightning-layout-item size="2"  padding="around-small">
@@ -27,6 +30,6 @@
                 </p>
             </lightning-layout-item>
         </lightning-layout>
-        <p slot="footer"><a href="https://www.zerobounce.net/members/register/">Get your API key</a></p> 
+        <p slot="footer"><a href="https://www.zerobounce.net/members/register/">Get Your API Key</a></p> 
     </lightning-card>
 </template>

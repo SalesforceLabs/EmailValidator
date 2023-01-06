@@ -1,4 +1,4 @@
-import { LightningElement, wire } from 'lwc';
+import { LightningElement, wire, track } from 'lwc';
 import getSettings from '@salesforce/apex/EmailValidatorSettingAbstract.getSettings'
 import saveSettings from '@salesforce/apex/EmailValidatorSettingAbstract.saveSettings'
 import settingExists from '@salesforce/apex/EmailValidatorSettingApp.settingExists'
@@ -7,7 +7,7 @@ import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 export default class EmailValidatorSettingAbstract extends LightningElement {
     
     error;
-    val;
+    @track val = 50;
     password;
 
     apikeyIsSet = false;
@@ -69,6 +69,28 @@ export default class EmailValidatorSettingAbstract extends LightningElement {
                 variant: 'success',
             });
             this.dispatchEvent(evt);
+            this.checkSettings(); 
+        })
+        .catch((error)=>{
+            console.log(error);
+        });
+    }
+    
+
+    handleReset(){
+        saveSettings({threshold: 0.5,password: ''})
+        .then((result)=>{
+            this.password=null;
+            this.template.querySelectorAll('lightning-input').forEach(element => {
+                element.value = null;
+            });
+            const evt = new ShowToastEvent({
+                title: 'Cleared',
+                message: 'Abstract API Key has been deleted and Threshold reset to default.',
+                variant: 'info',
+            });
+            this.dispatchEvent(evt);
+            this.val = 50;
             this.checkSettings(); 
         })
         .catch((error)=>{

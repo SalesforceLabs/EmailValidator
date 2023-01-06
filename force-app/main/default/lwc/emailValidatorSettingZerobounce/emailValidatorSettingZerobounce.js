@@ -7,7 +7,7 @@ export default class EmailValidatorSettingZerobounce extends LightningElement {
     
     error;
     password;
-    
+
     apikeyIsSet = false;
 
 
@@ -17,7 +17,7 @@ export default class EmailValidatorSettingZerobounce extends LightningElement {
 
     checkSettings() {
         console.log('Checking which settings are available:');
-        settingExists({settingName: 'EmailRep_API_Key'})
+        settingExists({settingName: 'Zerobounce_API_Key'})
         .then((result)=> {
             this.apikeyIsSet = result;
         })
@@ -42,6 +42,26 @@ export default class EmailValidatorSettingZerobounce extends LightningElement {
             });
             this.dispatchEvent(evt);    
             this.checkSettings();
+        })
+        .catch((error)=>{
+            console.log(error);
+        });
+    }
+
+    handleReset(){
+        saveSettings({password: ''})
+        .then((result)=>{
+            this.password=null;
+            this.template.querySelectorAll('lightning-input').forEach(element => {
+                element.value = null;
+            });
+            const evt = new ShowToastEvent({
+                title: 'Cleared',
+                message: 'Zerobounce API Key has been deleted.',
+                variant: 'info',
+            });
+            this.dispatchEvent(evt);
+            this.checkSettings(); 
         })
         .catch((error)=>{
             console.log(error);

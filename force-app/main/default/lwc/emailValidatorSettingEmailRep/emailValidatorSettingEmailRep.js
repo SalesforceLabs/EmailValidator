@@ -47,6 +47,26 @@ export default class EmailValidatorSettingEmailRep extends LightningElement {
         });
     }
 
+    handleReset(){
+        saveSettings({password: ''})
+        .then((result)=>{
+            this.password=null;
+            this.template.querySelectorAll('lightning-input').forEach(element => {
+                element.value = null;
+            });
+            const evt = new ShowToastEvent({
+                title: 'Cleared',
+                message: 'EmailRep API Key has been deleted.',
+                variant: 'info',
+            });
+            this.dispatchEvent(evt);
+            this.checkSettings(); 
+        })
+        .catch((error)=>{
+            console.log(error);
+        });
+    }
+
     handlePasswordChange(event){
         this.password=event.detail.value;
     }
