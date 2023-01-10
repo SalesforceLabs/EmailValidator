@@ -22,9 +22,9 @@ private with sharing class EmailRepEmailValidatorTest {
     @isTest
     static void testEmailRepApiSuccessHighReputation(){
         //Injection of Custom Metadata Type EmailRep_User_Agent
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'EmailRep_API_Key' => new Email_Validator_Setting__mdt(developerName = 'EmailRep_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'EmailRep_API_Key' => new EmailValidatorSetting__c(Name = 'EmailRep_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot')
         };
         Test.startTest();
         //Set mock class callout
@@ -40,9 +40,9 @@ private with sharing class EmailRepEmailValidatorTest {
     @isTest
     static void testEmailRepApiSuccessLowReputation(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'EmailRep_API_Key' => new Email_Validator_Setting__mdt(developerName = 'EmailRep_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'EmailRep_API_Key' => new EmailValidatorSetting__c(Name = 'EmailRep_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot')
         };
         Test.startTest();
         //Set mock class callout
@@ -58,7 +58,7 @@ private with sharing class EmailRepEmailValidatorTest {
     @isTest
     static void testEmailRepApiServiceSettingException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>();
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>();
         Test.startTest();
         //Set mock class callout
         Test.setMock(HttpCalloutMock.class, new EmailRepApiMock(200));
@@ -74,8 +74,8 @@ private with sharing class EmailRepEmailValidatorTest {
     @isTest
     static void testEmailRepApiPardotSettingException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'EmailRep_API_Key' => new Email_Validator_Setting__mdt(developerName = 'EmailRep_API_Key', value__c = 'QWERTZUIOP')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'EmailRep_API_Key' => new EmailValidatorSetting__c(Name = 'EmailRep_API_Key', value__c = 'QWERTZUIOP')
         };
         Test.startTest();
         //Set mock class callout
@@ -93,9 +93,9 @@ private with sharing class EmailRepEmailValidatorTest {
     @isTest
     static void testEmailRepApiExternalServiceException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'EmailRep_API_Key' => new Email_Validator_Setting__mdt(developerName = 'EmailRep_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'EmailRep_API_Key' => new EmailValidatorSetting__c(Name = 'EmailRep_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot')
         };
         Test.startTest();
         //Set mock class callout
@@ -112,9 +112,9 @@ private with sharing class EmailRepEmailValidatorTest {
     @isTest
     static void testEmailRepApiJsonException(){
         //Injection of Custom Metadata Type
-        SettingService.settings = new Map<String, Email_Validator_Setting__mdt>{
-            'EmailRep_API_Key' => new Email_Validator_Setting__mdt(developerName = 'EmailRep_API_Key', value__c = 'QWERTZUIOP'),
-            'Pardot_Named_Credential' => new Email_Validator_Setting__mdt(developerName = 'Pardot_Named_Credential', value__c = 'Pardot')
+        SettingService.settings = new Map<String, EmailValidatorSetting__c>{
+            'EmailRep_API_Key' => new EmailValidatorSetting__c(Name = 'EmailRep_API_Key', value__c = 'QWERTZUIOP'),
+            'Pardot_Named_Credential' => new EmailValidatorSetting__c(Name = 'Pardot_Named_Credential', value__c = 'Pardot')
         };
         Test.startTest();
         //Set mock class callout

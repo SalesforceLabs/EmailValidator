@@ -25,7 +25,7 @@ public with sharing class EmailRepImpl implements EmailValidatorService {
         } catch (System.JSONException e) {
             Logger.log(prospect.businessUnitId, prospect.service, prospect.email, 'Error', 'JSONException', response.getBody());
         } catch (SettingService.MissingSettingException e) {
-            Logger.log(prospect.businessUnitId, prospect.service, prospect.email, 'Error', 'MissingSettingException', e.getMessage()+' is missing from Email_Validator_Setting__mdt');
+            Logger.log(prospect.businessUnitId, prospect.service, prospect.email, 'Error', 'MissingSettingException', e.getMessage()+' is missing from EmailValidatorSetting__c');
         } catch (EmailValidator.ExternalServiceException e) {
             Logger.log(prospect.businessUnitId, prospect.service, prospect.email, 'Error', 'ExternalServiceException', response.getBody());
         } catch (Exception e) {
@@ -49,7 +49,7 @@ public with sharing class EmailRepImpl implements EmailValidatorService {
             }
             Logger.log(prospect.businessUnitId, 'Pardot', prospect.email, 'Success', 'POST Request', response.getBody());
         } catch (SettingService.MissingSettingException e) {
-            Logger.log(prospect.businessUnitId, 'Pardot', prospect.email, 'Error', 'MissingSettingException', e.getMessage()+' is missing from Email_Validator_Setting__mdt');
+            Logger.log(prospect.businessUnitId, 'Pardot', prospect.email, 'Error', 'MissingSettingException', e.getMessage()+' is missing from EmailValidatorSetting__c');
         } catch (EmailValidator.ExternalServiceException e) {
             Logger.log(prospect.businessUnitId, 'Pardot', prospect.email, 'Error', 'ExternalServiceException', 'Status Code:\n'+response.getStatusCode()+'\nBody:\n'+response.getBody());
         } catch (Exception e) {
@@ -132,7 +132,7 @@ public with sharing class EmailRepImpl implements EmailValidatorService {
     * Details
     * @description Mapping of the Details object returned within the JSON response of the EmailRep.io service
     */
-    @SuppressWarnings('PMD.VariableNamingConventions,PMD.TooManyFields')
+    @SuppressWarnings('PMD.VariableNamingConventions,PMD.TooManyFields,PMD.FieldNamingConventions')
     @testVisible
     private class Details {
         public Boolean blacklisted; 

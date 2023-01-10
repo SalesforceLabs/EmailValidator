@@ -1,0 +1,38 @@
+<template>
+    <lightning-card  title="EmailRep" icon-name="standard:service_crew" class="">
+        <lightning-button-group slot="actions">
+            <lightning-button-icon icon-name="utility:delete"    alternative-text="Reset"   class="slds-m-left_xx-small" title="Reset" onclick={handleReset}></lightning-button-icon>
+            <lightning-button label="Save"  onclick={handleSave} variant="brand"></lightning-button>
+        </lightning-button-group>
+        
+        
+        <lightning-layout multiple-rows="true" vertical-align="stretch">
+            
+            <lightning-layout-item size="2"  padding="around-small">
+                <template if:true={apikeyIsSet}>
+                    
+                    <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:success" alternative-text="Configured!" variant="success" title="configuration available"></lightning-icon>
+                    
+                </template>
+                <template if:false={apikeyIsSet}>
+                    
+                    <lightning-icon class="slds-align_absolute-center slds-var-p-around_large" icon-name="utility:warning" alternative-text="Missing Configuration!" variant="warning" title="configuration missing"></lightning-icon>
+                    
+                </template>
+            </lightning-layout-item>
+            <lightning-layout-item size="10" padding="around-small">
+                <p class="slds-p-horizontal_small">
+                    <lightning-input
+                        type="password"
+                        label="API KEY"
+                        name="emailrep_api_key"
+                        placeholder="Enter the new API Key"
+                        onchange={handlePasswordChange}
+                    ></lightning-input>
+                </p>
+            </lightning-layout-item>
+        </lightning-layout>
+        
+        <p slot="footer"><a href="https://emailrep.io/key">Get Your API Key</a></p> 
+    </lightning-card>
+</template>
