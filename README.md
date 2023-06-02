@@ -23,6 +23,10 @@ Our value proposition is:
 * Increase your database hygiene by deleting inactive/low reputation prospects
 * Decrease your bounce rates and increase your ROI
 
+## Required Licenses
+The Marketing App Extension features are only available in: Account Engagement Plus, Advanced, and Premium Editions
+https://help.salesforce.com/s/articleView?id=sf.pardot_extensions_considerations.htm&type=5
+
 ## Setup & User Guides
 All documentation can be found on the [Wiki](https://github.com/SalesforceLabs/EmailValidator/wiki) of this GitHub project:
 * [Setup Guide](https://github.com/SalesforceLabs/EmailValidator/wiki/1.-Setup-Guide)
