@@ -71,6 +71,7 @@
     </dynamicChoiceSets>
     <environments>Default</environments>
     <interviewLabel>Email Validator for Pardot - Manual Validation {!$Flow.CurrentDateTime}</interviewLabel>
+    <isAdditionalPermissionRequiredToRun>true</isAdditionalPermissionRequiredToRun>
     <label>Email Validator for Pardot - Manual Validation</label>
     <processMetadataValues>
         <name>BuilderType</name>

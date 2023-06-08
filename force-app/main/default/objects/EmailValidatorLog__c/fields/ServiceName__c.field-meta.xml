@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ServiceName__c</fullName>
+    <deprecated>false</deprecated>
     <externalId>false</externalId>
     <label>Service Name</label>
     <required>false</required>
@@ -18,6 +19,11 @@
                 <fullName>EmailRep</fullName>
                 <default>false</default>
                 <label>EmailRep</label>
+            </value>
+            <value>
+                <fullName>Neverbounce</fullName>
+                <default>false</default>
+                <label>Neverbounce</label>
             </value>
             <value>
                 <fullName>Sendgrid</fullName>

@@ -4,7 +4,7 @@
             <lightning-button-icon icon-name="utility:delete"    alternative-text="Reset"   class="slds-m-left_xx-small" title="Reset" onclick={handleReset}></lightning-button-icon>
             <lightning-button label="Save"  onclick={handleSave} variant="brand"></lightning-button>
         </lightning-button-group>
-        <lightning-layout multiple-rows="true" vertical-align="stretch">
+        <lightning-layout multiple-rows="true" vertical-align="stretch" class="card-body">
             
             <lightning-layout-item size="2"  padding="around-small">
                 <template if:true={apikeyIsSet}>

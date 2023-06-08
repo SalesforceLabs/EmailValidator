@@ -44,6 +44,7 @@
             <lightning-layout-item size="10" padding="around-small">
                 <p class="slds-p-horizontal_small">
                     <lightning-slider
+                    id="slider"
                     label="Quality Score Threshold (%)"
                     value={val}
                     min=0
@@ -54,8 +55,6 @@
                 </p>
             </lightning-layout-item>
         </lightning-layout>
-        
-        
         <p slot="footer"><a href="https://app.abstractapi.com/users/signup?target=/api/email-validation/pricing/select">Get Your API Key</a></p> 
     </lightning-card>
 </template>
