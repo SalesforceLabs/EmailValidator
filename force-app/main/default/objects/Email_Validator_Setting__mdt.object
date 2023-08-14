@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Configure the API keys and other Email Validator related settings here</description>
-    <fields>
-        <fullName>Value__c</fullName>
-        <externalId>false</externalId>
-        <fieldManageability>SubscriberControlled</fieldManageability>
-        <label>Value</label>
-        <length>255</length>
-        <required>false</required>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <label>Email Validator Setting</label>
-    <pluralLabel>Email Validator Settings</pluralLabel>
+    <label>DEPRECATED: Email Validator Setting</label>
+    <pluralLabel>DEPRECTAED: Email Validator Settings</pluralLabel>
     <visibility>Public</visibility>
 </CustomObject>

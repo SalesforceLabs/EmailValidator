@@ -173,5 +173,60 @@
         <isActive>false</isActive>
         <marketingAppExtension>cardimir__Email_Validator</marketingAppExtension>
     </marketingAppExtActions>
+    <marketingAppExtActions>
+        <actionName>Check Email (Neverbounce)</actionName>
+        <actionParams>{
+  &quot;isStandard&quot;: false,
+  &quot;type&quot;: &quot;apex&quot;
+}</actionParams>
+        <actionSchema>{
+  &quot;properties&quot;: {
+    &quot;businessUnitId&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;Business Unit ID&quot;,
+      &quot;value&quot;: &quot;Paste your BU ID here&quot;
+    },
+    &quot;email&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;Email&quot;,
+      &quot;value&quot;: &quot;{{Recipient.Email}}&quot;
+    },
+    &quot;service&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;Service&quot;,
+      &quot;value&quot;: &quot;Neverbounce&quot;
+    }
+  },
+  &quot;view&quot;: {
+    &quot;components&quot;: [
+      {
+        &quot;definition&quot;: &quot;lightning/control&quot;,
+        &quot;scope&quot;: &quot;#/properties/businessUnitId&quot;
+      }
+    ]
+  },
+  &quot;required&quot;: [
+    &quot;businessUnitId&quot;,
+    &quot;email&quot;,
+    &quot;service&quot;
+  ]
+}</actionSchema>
+        <actionSelector>cardimir__EmailValidatorAction</actionSelector>
+        <apiName>Neverbounce</apiName>
+        <isActive>false</isActive>
+        <marketingAppExtension>cardimir__Email_Validator</marketingAppExtension>
+    </marketingAppExtActions>
+    <marketingAppExtActivities>
+        <fullName>Email_Approved_Abstract</fullName>
+        <isActive>false</isActive>
+        <marketingAppExtension>cardimir__Email_Validator</marketingAppExtension>
+        <masterLabel>Approved (Abstract)</masterLabel>
+    </marketingAppExtActivities>
+    <marketingAppExtActivities>
+        <fullName>Email_Approved_EmailRep_io</fullName>
+        <isActive>false</isActive>
+        <marketingAppExtension>cardimir__Email_Validator</marketingAppExtension>
+        <masterLabel>Approved (EmailRep.io)</masterLabel>
+    </marketingAppExtActivities>
     <masterLabel>Email Validator</masterLabel>
 </MarketingAppExtension>

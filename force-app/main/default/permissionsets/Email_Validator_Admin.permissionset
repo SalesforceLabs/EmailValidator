@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Email_Validator_for_Pardot</application>
+        <visible>true</visible>
+    </applicationVisibilities>
     <classAccesses>
         <apexClass>AbstractApiMock</apexClass>
         <enabled>true</enabled>
@@ -34,6 +38,50 @@
     </classAccesses>
     <classAccesses>
         <apexClass>EmailValidatorService</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingAbstract</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingAbstractTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingApp</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingEmailRep</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingEmailRepTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingExtActivityTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingExternalActivity</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingSendgrid</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingSendgridTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingZerobounce</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EmailValidatorSettingZerobounceTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -119,6 +167,10 @@
         <field>EmailValidatorLog__c.StatusIcon__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <flowAccesses>
+        <enabled>true</enabled>
+        <flow>Email_Validator_for_Pardot_Manual_Validation</flow>
+    </flowAccesses>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Email Validator Admin</label>
     <objectPermissions>
@@ -132,6 +184,10 @@
     </objectPermissions>
     <tabSettings>
         <tab>EmailValidatorLog__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Email_Validator_Setup</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>

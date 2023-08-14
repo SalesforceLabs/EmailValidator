@@ -3,6 +3,10 @@
     <label>Zerobounce</label>
     <protected>true</protected>
     <values>
+        <field>APIKey_SettingName__c</field>
+        <value xsi:type="xsd:string">Zerobounce_API_Key</value>
+    </values>
+    <values>
         <field>Active__c</field>
         <value xsi:type="xsd:boolean">true</value>
     </values>
